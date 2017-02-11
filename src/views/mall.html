@@ -1,0 +1,22 @@
+<div ng-controller="mallCtrl">
+	<!--机票小菜单-->
+	<div class="mall_menu">
+		<a href="#" ng-repeat="mall in mallData" class="mall_menu_a">
+			<span class="mall_menu_span"><img ng-src="{{mall.img}}" class="mall_img"></span>
+			<p class="mall_menu_p">{{mall.word}}</p>
+		</a>
+	</div>
+	<!--banner-->
+	<div class="mall_banner">
+		<div class="mall_ba">
+			<img src="../images/tejia.jpg" class="mall_bannerimg"/>
+		</div>
+		<div class="mall_ba">
+			<img src="../images/miaosha.jpg" class="mall_baimg"/><img src="../images/miaosha.jpg" class="mall_baimg"/>
+		</div>
+	</div>
+	<!--end banner-->
+	<div class="mall_goods">
+		有好货
+	</div>
+</div>
