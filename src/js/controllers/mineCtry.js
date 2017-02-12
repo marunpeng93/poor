@@ -11,7 +11,6 @@ define(['app'],function(app){
 		 	}
 		 	$scope.classfn = function(){
 		 		if(num==0){
-		 			console.log(num)
 		 			return "none";
 		 		}else{
 		 			return $scope.bol ? "mine-show" : "mine-hide"

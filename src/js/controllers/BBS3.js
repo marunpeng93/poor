@@ -4,14 +4,12 @@ define(['app'],function(app){
 	      .then(function(data){
 	        	$scope.selData = data.data.data.times_range;
 	        	$scope.selData1 = data.data.data.destination;
-	        	console.log($scope.selData1);
 	      },function(error){
 	        console.log(error)
 	    });
 	    $http.get(baseUrl + "bbsFind")
 				.then(function(data){
 					$scope.add2products = data.data.data;
-//					 console.log($scope.add2products)
 				},function(error){
 					$scope.error = error;
 		})
